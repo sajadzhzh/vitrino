@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --main-background-light: #FAF5FC;
+  --main-background-dark: #100B16;
+  --font-color-dark: #24152D;
+  --font-color-light: #F8F3FA;
+
+  --container-background-light: #F5EEFA;
+  --container-background-dark: #1E1528;
+
+  --font-vazir: vazirMatn;
+  --font-geist-sans: geistSans;
+
+  --spacing: 0.25rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  transition: 0.25s all;
+  padding-block: calc(var(--spacing) * 1);
+  padding-inline: calc(var(--spacing) * 2);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--main-background-light);
+  color: var(--font-color-dark);
+
+  font-family: var(--font-vazir), var(--font-geist-sans);
+}
+
+body[data-theme="dark"] {
+  background: var(--main-background-dark);
+  color: var(--font-color-light);
+
+  .Container{
+    background-color: var(--container-background-dark);
+  }
+}
+
+.Container{
+  background-color: var(--container-background-light);
+  border-radius: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 3);
+  padding-inline: calc(var(--spacing) * 4);
+  box-shadow: 0px 2px 10px var(--color-gray-400);
 }
