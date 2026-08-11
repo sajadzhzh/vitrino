@@ -1,0 +1,19 @@
+.btn {
+  padding-block: calc(var(--spacing) * 2);
+  padding-inline: calc(var(--spacing) * 3);
+  border-radius: calc(var(--spacing) * 6);
+  display: flex;
+  gap: calc(var(--spacing) * 2);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn_primary{
+    background-image: linear-gradient(to left top,
+    var(--primary-color),
+    var(--font-active)
+    );
+    color: #f8f3fa;
+}
