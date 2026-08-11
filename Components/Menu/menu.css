@@ -1,0 +1,18 @@
+.side_menu {
+  height: 88svh;
+
+  .side_menu_item {
+    border-radius: calc(var(--spacing) * 6);
+    font-size: 14px;
+
+    &:hover {
+      background-color: var(--hover);
+    }
+
+    &.active {
+      background-image: var(--active-tab);
+      color: var(--font-active);
+      box-shadow: 0px 2px 10px var(--shadow);
+    }
+  }
+}
