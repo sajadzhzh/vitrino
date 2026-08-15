@@ -4,6 +4,7 @@ import Link from "next/link";
 import MenuItems from "./items";
 import Button from "../Button/Button";
 import { Plus } from "lucide-react";
+import Avatar from "../Avatar/Avatar";
 
 export default function SideMenu() {
   return (
@@ -18,12 +19,18 @@ export default function SideMenu() {
         />
       </Link>
 
-      <MenuItems />
+      <div className="my-2">
+        <MenuItems />
+      </div>
 
       <Button theme="primary">
         <Plus />
         پست جدید
       </Button>
+
+      <div className="my-2">
+        <Avatar userName="Sajadzhzh" />
+      </div>
     </div>
   );
 }

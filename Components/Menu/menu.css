@@ -1,5 +1,5 @@
 .side_menu {
-  height: 88svh;
+  height: 89svh;
 
   .side_menu_item {
     border-radius: calc(var(--spacing) * 6);
