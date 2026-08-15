@@ -8,7 +8,7 @@ import Avatar from "../Avatar/Avatar";
 
 export default function SideMenu() {
   return (
-    <div className="side_menu">
+    <div className="side_menu Container">
       <Link href="" className="w-full flex justify-center">
         <Image
           src={logo}
