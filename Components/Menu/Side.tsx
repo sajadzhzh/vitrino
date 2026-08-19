@@ -29,7 +29,7 @@ export default function SideMenu() {
       </Button>
 
       <div className="my-2">
-        <Avatar userName="Sajadzhzh" />
+        <Avatar userName="Sajadzhzh" online hover veryfied />
       </div>
     </div>
   );

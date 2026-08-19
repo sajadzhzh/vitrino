@@ -1,15 +1,26 @@
 import Image from "next/image";
 import avatar from "@/public/4.jpg";
 import Link from "next/link";
+import { BadgeCheck } from "lucide-react";
 
-export default function Avatar({ userName }: { userName?: string }) {
+export default function Avatar({
+  userName,
+  online,
+  hover,
+  veryfied,
+}: {
+  userName?: string;
+  online?: boolean;
+  hover?: boolean;
+  veryfied?: boolean;
+}) {
   return (
     <Link
       href=""
       className={
-        userName
+        hover
           ? "group w-full flex gap-2 items-center rounded-3xl border border-white/0 hover:shadow-xl hover:border-gray-400/25 "
-          : "w-max flex items-center"
+          : "w-max flex gap-2 items-center"
       }
     >
       <Image
@@ -21,11 +32,12 @@ export default function Avatar({ userName }: { userName?: string }) {
       />
 
       {userName && (
-        <>
-          <div className="grow group-hover:-translate-y-px">{userName}</div>
+        <div className="grow group-hover:-translate-y-px">{userName}</div>
+      )}
+      {veryfied && <BadgeCheck className="text-blue-500" />}
 
-          <div className="ms-auto border-3 border-green-500 rounded-full"></div>
-        </>
+      {online && (
+        <div className="ms-auto border-3 border-green-500 rounded-full"></div>
       )}
     </Link>
   );

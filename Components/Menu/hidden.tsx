@@ -49,7 +49,7 @@ export default function HiddenMenu({ onClose }: { onClose: () => void }) {
         </Button>
 
         <div className="my-2">
-          <Avatar userName="Sajadzhzh" />
+          <Avatar userName="Sajadzhzh" veryfied online hover/>
         </div>
       </div>
     </div>
