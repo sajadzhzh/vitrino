@@ -1,3 +1,5 @@
+"use client"
+
 import { ReactNode } from "react";
 import "./button.css";
 
@@ -16,13 +18,14 @@ export default function Button({
   className?: string;
   theme: "primary";
   type?: "button" | "reset" | "submit";
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }) {
   const variant = variants[theme];
   return (
     <button
       type={type ?? "button"}
       className={`btn ${className ?? ""} ${variant}`}
+      onClick={onClick}
     >
       {children}
     </button>

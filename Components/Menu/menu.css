@@ -36,5 +36,24 @@
     box-shadow: 0px 2px 10px var(--shadow);
     padding-block: calc(var(--spacing) * 2);
     padding-inline: calc(var(--spacing) * 3);
+    animation: menuOpen 0.5s;
+  }
+}
+
+@keyframes menuOpen {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes menuClose {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
   }
 }

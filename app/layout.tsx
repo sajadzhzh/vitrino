@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Vazirmatn } from "next/font/google";
 import "./globals.css";
 import Menu from "@/Components/Menu";
+import Header from "@/Components/Header/Index";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div className="w-0 p-0 xl:w-1/5">
           <Menu />
         </div>
-        <div className="w-full xl:w-4/5">{children}</div>
+        <div className="w-full xl:w-4/5 flex flex-col gap-2">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
