@@ -5,7 +5,7 @@ import Avatar from "../Avatar/Avatar";
 
 export default function Desktop() {
   return (
-    <div className="hidden w-full Container xl:flex items-center justify-between">
+    <div className="hidden w-full Container lg:flex items-center justify-between">
       <div className="w-1/2">
         <Search
           name="HeaderSearch"

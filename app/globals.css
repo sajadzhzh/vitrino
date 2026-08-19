@@ -46,6 +46,10 @@ a {
   padding-inline: calc(var(--spacing) * 3);
 }
 
+body:not(:has(.hidden_menu_container.hidden)){
+  overflow-y: hidden;
+}
+
 .Container {
   background-color: var(--container-background);
   border-radius: calc(var(--spacing) * 6);

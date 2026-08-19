@@ -27,11 +27,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       dir="rtl"
       className={`${vazirMatn.variable} ${geistSans.variable}`}
     >
-      <body data-theme="light" className="w-full flex flex-row xl:gap-4">
-        <div className="w-0 p-0 xl:w-1/5">
+      <body data-theme="light" className="w-full flex flex-row lg:gap-4">
+        <div className="w-0 p-0 lg:w-1/5">
           <Menu />
         </div>
-        <div className="w-full xl:w-4/5 flex flex-col gap-2">
+        <div className="w-full lg:w-4/5 flex flex-col gap-2">
           <Header />
           {children}
         </div>

@@ -17,7 +17,7 @@ export default function Avatar({ userName }: { userName?: string }) {
         alt="avatar"
         width={100}
         height={100}
-        className="size-8 rounded-full"
+        className="size-10 min-w-10 rounded-full"
       />
 
       {userName && (

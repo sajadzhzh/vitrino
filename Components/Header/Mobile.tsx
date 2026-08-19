@@ -13,7 +13,7 @@ export default function Mobile({
   setOpen: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }) {
   return (
-    <div className="w-full min-w-80 flex justify-between items-center xl:hidden Container">
+    <div className="w-full min-w-80 flex justify-between items-center lg:hidden Container">
       <Link href="" className="w-max flex justify-center">
         <Image
           src={logo}
