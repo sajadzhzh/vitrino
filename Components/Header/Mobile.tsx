@@ -13,8 +13,8 @@ export default function Mobile({
   setOpen: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }) {
   return (
-    <div className="w-full min-w-80 lg:hidden fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-      <div className="w-full flex justify-between items-center Container py-3">
+    <div className="w-full min-w-80 lg:hidden fixed top-0 left-0 right-0 Container bg-white shadow-md">
+      <div className="w-full flex justify-between items-center">
         <Link href="" className="w-max flex justify-center">
           <Image
             src={logo}
