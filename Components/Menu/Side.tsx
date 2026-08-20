@@ -19,7 +19,7 @@ export default function SideMenu() {
         />
       </Link>
 
-      <div className="my-2">
+      <div className="my-4">
         <MenuItems />
       </div>
 
@@ -28,7 +28,7 @@ export default function SideMenu() {
         پست جدید
       </Button>
 
-      <div className="my-2">
+      <div className="my-4">
         <Avatar userName="Sajadzhzh" online hover veryfied />
       </div>
     </div>

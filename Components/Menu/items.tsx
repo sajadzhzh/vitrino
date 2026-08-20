@@ -1,4 +1,4 @@
-import { Aperture, Bell, Bookmark, Compass, Home, MessageSquareMore, Settings, User2 } from "lucide-react";
+import { Bell, Bookmark, Compass, Home, MessageSquareMore, Settings, User2 } from "lucide-react";
 import Link from "next/link";
 
 export default function MenuItems(){
@@ -11,10 +11,6 @@ export default function MenuItems(){
             <Link href="" className="w-full flex gap-2 items-center side_menu_item">
                 <Compass size={20}/>
                 کاوش
-            </Link>
-            <Link href="" className="w-full flex gap-2 items-center side_menu_item">
-                <Aperture size={20}/>
-                پست‌ها
             </Link>
             <Link href="" className="w-full flex gap-2 items-center side_menu_item">
                 <MessageSquareMore size={20}/>
