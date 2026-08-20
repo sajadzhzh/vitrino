@@ -4,10 +4,11 @@ import Image from "next/image";
 import post from "@/public/4.jpg";
 import Link from "next/link";
 import { Heart, MessageSquareMore, Send } from "lucide-react";
+import "./Post.css";
 
 export default function Post() {
   return (
-    <div className="w-full max-h-max Container flex flex-col gap-2 outline outline-white hover:outline-gray-400">
+    <div className="post Container outline outline-white hover:outline-gray-400">
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center gap-1">
           <Avatar userName="Sajadzhzh" veryfied />

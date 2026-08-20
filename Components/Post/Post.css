@@ -1,0 +1,7 @@
+.post {
+  width: 100%;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2) ;
+}
