@@ -29,7 +29,7 @@ export default function HiddenMenu({ onClose }: { onClose: () => void }) {
   return (
     <div className="hidden hidden_menu_container bg-black/25" id="hidden_menu">
       <div className="hidden_menu" ref={menuRef}>
-        <Link href="" className="w-full flex justify-center">
+        <Link href="/" className="w-full flex justify-center">
           <Image
             src={logo}
             alt="vitrino"

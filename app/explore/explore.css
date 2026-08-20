@@ -1,0 +1,59 @@
+.carousel {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  anchor-name: --hashTag-carousel;
+  scrollbar-width: none;
+  padding-block: calc(var(--spacing) * 2);
+  padding-inline: calc(var(--spacing) * 3);
+}
+
+.carousel::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: black;
+  opacity: 0.7;
+  cursor: pointer;
+  position: absolute;
+  position-anchor: --hashTag-carousel;
+}
+
+.carousel::scroll-button(*):hover,
+.carousel::scroll-button(*):focus {
+  opacity: 1;
+}
+
+.carousel::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+.carousel::scroll-button(*):disabled {
+  opacity: 0.2;
+  cursor: unset;
+}
+
+.carousel::scroll-button(left) {
+  content: ">" / "Previous";
+  background-color: var(--primary-color);
+  border-radius: calc(var(--spacing) * 6);
+  font-size: 22px;
+  color: aliceblue;
+  min-width: 20px;
+  padding-block: calc(var(--spacing) * 1);
+  padding-inline: calc(var(--spacing) * 2);
+  right: calc(anchor(left) - 30px);
+  bottom: calc(anchor(top) + 5px);
+}
+
+.carousel::scroll-button(right) {
+  content: "<" / "Next";
+  background-color: var(--primary-color);
+  border-radius: calc(var(--spacing) * 6);
+  font-size: 22px;
+  color: #f8f3fa;
+  min-width: 20px;
+  padding-block: calc(var(--spacing) * 1);
+  padding-inline: calc(var(--spacing) * 2);
+  left: calc(anchor(left) + 50px);
+  bottom: calc(anchor(top) + 5px);
+}

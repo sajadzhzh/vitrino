@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function MenuItems(){
     return(
         <div className="w-full mt-2 flex flex-col gap-2">
-            <Link href="" className="w-full flex gap-2 items-center side_menu_item active">
+            <Link href="/" className="w-full flex gap-2 items-center side_menu_item active">
                 <Home size={20}/>
                 خانه
             </Link>
-            <Link href="" className="w-full flex gap-2 items-center side_menu_item">
+            <Link href="/explore" className="w-full flex gap-2 items-center side_menu_item">
                 <Compass size={20}/>
                 کاوش
             </Link>
