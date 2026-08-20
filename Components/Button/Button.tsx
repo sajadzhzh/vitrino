@@ -1,10 +1,13 @@
-"use client"
+"use client";
 
 import { ReactNode } from "react";
 import "./button.css";
 
+type Theme = "primary" | "normal";
+
 const variants = {
   primary: "btn_primary",
+  normal: "btn_normal",
 };
 
 export default function Button({
@@ -16,7 +19,7 @@ export default function Button({
 }: {
   children: ReactNode;
   className?: string;
-  theme: "primary";
+  theme: Theme;
   type?: "button" | "reset" | "submit";
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }) {

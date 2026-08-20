@@ -16,4 +16,9 @@
     var(--font-active)
     );
     color: #f8f3fa;
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+.btn_normal{
+    color: var(--font-color);
 }
