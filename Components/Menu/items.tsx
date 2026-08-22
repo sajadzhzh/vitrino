@@ -30,7 +30,7 @@ export default function MenuItems() {
         <Compass size={20} />
         کاوش
       </Link>
-      <Link href="" className="w-full flex gap-2 items-center side_menu_item">
+      <Link href="/messages" className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/messages") && "active"}`}>
         <MessageSquareMore size={20} />
         پیام‌ها
       </Link>
