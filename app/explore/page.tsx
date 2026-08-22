@@ -1,6 +1,8 @@
 import HashTag from "@/Components/HashTags/HashTag";
 import Carousel from "@/Components/Carousel/Carousel";
 import AvatarSugestion from "@/Components/Avatar/AvatarSugestion";
+import { Heart } from "lucide-react";
+import Post from "@/Components/Post/Post";
 
 export default function Explore() {
   return (
@@ -24,39 +26,27 @@ export default function Explore() {
       <div className="w-full flex flex-col gap-2">
         <h2>⭐ کاربران محبوب</h2>
         <Carousel>
-          <AvatarSugestion
-          userName="Sajadzhzh"
-          veryfied
-          />
-          <AvatarSugestion
-          userName="Sajadzhzh"
-          veryfied
-          />
-          <AvatarSugestion
-          userName="Sajadzhzh"
-          veryfied
-          />
-          <AvatarSugestion
-          userName="Sajadzhzh"
-          veryfied
-          />
-          <AvatarSugestion
-          userName="Sajadzhzh"
-          veryfied
-          />
-          <AvatarSugestion
-          userName="Sajadzhzh"
-          veryfied
-          />
-          <AvatarSugestion
-          userName="Sajadzhzh"
-          veryfied
-          />
-          <AvatarSugestion
-          userName="Sajadzhzh"
-          veryfied
-          />
+          <AvatarSugestion userName="Sajadzhzh" veryfied />
+          <AvatarSugestion userName="Sajadzhzh" veryfied />
+          <AvatarSugestion userName="Sajadzhzh" veryfied />
+          <AvatarSugestion userName="Sajadzhzh" veryfied />
+          <AvatarSugestion userName="Sajadzhzh" veryfied />
+          <AvatarSugestion userName="Sajadzhzh" veryfied />
+          <AvatarSugestion userName="Sajadzhzh" veryfied />
+          <AvatarSugestion userName="Sajadzhzh" veryfied />
         </Carousel>
+      </div>
+
+      <div className="w-full flex flex-col gap-2">
+        <h2 className="flex items-center gap-1">
+          <Heart size={18} fill="red" color="red" />
+          پست‌های محبوب
+        </h2>
+        <div className="w-full flex flex-col gap-3">
+          <Post />
+          <Post />
+          <Post />
+        </div>
       </div>
     </div>
   );
