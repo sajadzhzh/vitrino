@@ -1,0 +1,84 @@
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  gap: calc(var(--spacing) * 2);
+
+  width: 100%;
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+
+  padding-block: calc(var(--spacing) * 2);
+  padding-inline: calc(var(--spacing) * 3);
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-button {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 10;
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: var(--container-background);
+  color: var(--font-color);
+  border: 0.5px dashed var(--color-gray-400);
+
+  cursor: pointer;
+
+  opacity: 0.8;
+
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease;
+
+  &:hover {
+    border: 0.5px solid var(--color-gray-200);
+    box-shadow: 0px 2px 8px var(--shadow);
+  }
+}
+
+.carousel-button:hover {
+  opacity: 1;
+}
+
+.carousel-button:active {
+  transform: translateY(-50%) scale(0.92);
+}
+
+.carousel-button-left {
+  top: -15px;
+  left: 65px;
+}
+
+.carousel-button-right {
+  top: -15px;
+  left: 25px;
+}
+
+.carousel-button:disabled {
+  opacity: 0.2;
+  cursor: default;
+  pointer-events: none;
+}

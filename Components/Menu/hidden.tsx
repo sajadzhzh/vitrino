@@ -17,10 +17,16 @@ export default function HiddenMenu({ onClose }: { onClose: () => void }) {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         onClose();
       }
+
+      if (menuRef.current?.contains(event.target as Node)) {
+        setTimeout(() => {
+          onClose();
+        }, 250);
+      }
     }
 
     document.addEventListener("mousedown", handleClickOutside);
-    
+
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -49,7 +55,7 @@ export default function HiddenMenu({ onClose }: { onClose: () => void }) {
         </Button>
 
         <div className="my-2">
-          <Avatar userName="Sajadzhzh" veryfied online hover/>
+          <Avatar userName="Sajadzhzh" veryfied online hover />
         </div>
       </div>
     </div>

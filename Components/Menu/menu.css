@@ -29,6 +29,7 @@
   right: 0;
   height: 100rem;
   width: 100%;
+  z-index: 999;
 
   .hidden_menu {
     width: 70%;
