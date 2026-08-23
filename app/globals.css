@@ -9,6 +9,7 @@
   --font-active: #f652c6;
 
   --container-background: #f5eefa;
+  --input-background: #e4dde9;
   --active-tab: linear-gradient(to left bottom, #faf5fc, #faf5fc, #ee27b680);
   --shadow: var(--color-gray-300);
   --hover: var(--color-gray-200);
@@ -40,6 +41,8 @@ body[data-theme="dark"] {
   --hover: var(--color-gray-800);
 
   --container-background: #1e1528;
+  --input-background: #221d29;
+
 }
 a {
   padding-block: calc(var(--spacing) * 2);

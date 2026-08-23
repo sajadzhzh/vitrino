@@ -15,7 +15,7 @@ export default function Search({
 }) {
   return (
     <div
-      className={`w-full relative border border-gray-200 bg-(--container-background) rounded-2xl ${className}`}
+      className={`w-full relative border border-gray-200 bg-(--input-background) rounded-2xl ${className}`}
     >
       <input
         type="text"

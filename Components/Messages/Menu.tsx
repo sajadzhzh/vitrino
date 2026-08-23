@@ -2,7 +2,7 @@ import Avatar from "../Avatar/Avatar";
 
 export default function MessagePageMenu({onClick}:{onClick: (userName: string) => void;}) {
   return (
-    <div className="w-1/4 h-116 overflow-y-scroll scrollbar-none flex flex-col gap-2 Container border border-gray-200">
+    <div className="w-full lg:w-1/4 h-[85svh] lg:h-116 overflow-y-scroll scrollbar-none flex flex-col gap-2 Container border border-gray-200">
       <h2>لیست گفتگو های شما</h2>
       <Avatar
         userName="Sajadzhzh"
