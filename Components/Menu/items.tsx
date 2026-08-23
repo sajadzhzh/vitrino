@@ -34,7 +34,7 @@ export default function MenuItems() {
         <MessageSquareMore size={20} />
         پیام‌ها
       </Link>
-      <Link href="" className="w-full flex gap-2 items-center side_menu_item">
+      <Link href="/notification" className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/notification") && "active"}`}>
         <Bell size={20} />
         اعلانات
       </Link>
