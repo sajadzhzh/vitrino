@@ -5,18 +5,23 @@ import { BadgeCheck } from "lucide-react";
 
 export default function Avatar({
   userName,
+  href,
   online,
   hover,
   veryfied,
+  onClick,
 }: {
   userName?: string;
+  href?: string;
   online?: boolean;
   hover?: boolean;
   veryfied?: boolean;
+  onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }) {
   return (
     <Link
-      href=""
+      href={href || ""}
+      onClick={onClick}
       className={
         hover
           ? "group w-full flex gap-2 items-center rounded-3xl border border-white/0 hover:shadow-xl hover:border-gray-400/25 "
@@ -32,9 +37,10 @@ export default function Avatar({
       />
 
       {userName && (
-        <div className="grow group-hover:-translate-y-px">{userName}</div>
+        <div className="text-[14px] group-hover:-translate-y-px">{userName}</div>
       )}
-      {veryfied && <BadgeCheck className="text-blue-500" />}
+
+      {veryfied && <BadgeCheck className="text-blue-500 min-w-5" />}
 
       {online && (
         <div className="ms-auto border-3 border-green-500 rounded-full"></div>

@@ -12,6 +12,7 @@ export default function Desktop() {
           id="HeaderSearch"
           placeHolder="جستجو در ویترینو ..."
           className="focus-within:border-gray-300 focus-within:shadow"
+          search
         />
       </div>
 

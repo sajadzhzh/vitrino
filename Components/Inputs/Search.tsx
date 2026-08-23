@@ -5,15 +5,17 @@ export default function Search({
   id,
   placeHolder,
   className,
+  search,
 }: {
   name: string;
   id: string;
   placeHolder?: string;
   className?: string;
+  search?: boolean;
 }) {
   return (
     <div
-      className={`w-full relative border border-gray-200 bg-gray-200 rounded-2xl ${className}`}
+      className={`w-full relative border border-gray-200 bg-(--container-background) rounded-2xl ${className}`}
     >
       <input
         type="text"
@@ -23,9 +25,11 @@ export default function Search({
         className={`w-full py-2 ps-9 outline-0 placeholder:text-[13px] text-sm`}
       ></input>
 
-      <div className="absolute top-2 right-2">
-        <SearchIcon size={20}/>
-      </div>
+      {search && (
+        <div className="absolute top-2 right-2">
+          <SearchIcon size={20} />
+        </div>
+      )}
     </div>
   );
 }
