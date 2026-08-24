@@ -38,7 +38,7 @@ export default function MenuItems() {
         <Bell size={20} />
         اعلانات
       </Link>
-      <Link href="" className="w-full flex gap-2 items-center side_menu_item">
+      <Link href="/saved" className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/saved") && "active"}`}>
         <Bookmark size={20} />
         پست‌های ذخیره شده
       </Link>

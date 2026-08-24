@@ -42,7 +42,7 @@ export default function Explore() {
           <Heart size={18} fill="red" color="red" />
           پست‌های محبوب
         </h2>
-        <div className="w-full flex flex-col gap-3">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3">
           <Post />
           <Post />
           <Post />

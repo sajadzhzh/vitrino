@@ -20,7 +20,7 @@ export default function Post({ saved }: { saved?: boolean }) {
       </div>
       <Link
         href=""
-        className="min-w-full group max-h-100 hover:bg-gray-200 rounded-2xl"
+        className="min-w-full group max-h-100 hover:bg-(--shadow) rounded-2xl"
       >
         <Image
           src={post}
@@ -40,22 +40,22 @@ export default function Post({ saved }: { saved?: boolean }) {
 
       <div className="w-full flex gap-3">
         <div className="max-w-12 min-w-12">
-          <Button theme="normal" className="hover:bg-gray-200">
+          <Button theme="normal" className="hover:bg-(--shadow)">
             <Heart className="text-red-500" fill="var(--color-red-500)" />
           </Button>
         </div>
         <div className="max-w-12 min-w-12">
-          <Button theme="normal" className="hover:bg-gray-200">
+          <Button theme="normal" className="hover:bg-(--shadow)">
             <Bookmark fill={saved ? "var(--font-color)" : "none"} />
           </Button>
         </div>
         <div className="max-w-12 min-w-12">
-          <Button theme="normal" className="hover:bg-gray-200">
+          <Button theme="normal" className="hover:bg-(--shadow)">
             <MessageSquareMore />
           </Button>
         </div>
         <div className="max-w-12 min-w-12">
-          <Button theme="normal" className="hover:bg-gray-200">
+          <Button theme="normal" className="hover:bg-(--shadow)">
             <Send />
           </Button>
         </div>
