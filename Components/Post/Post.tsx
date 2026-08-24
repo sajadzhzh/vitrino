@@ -3,10 +3,10 @@ import Button from "@/Components/Button/Button";
 import Image from "next/image";
 import post from "@/public/4.jpg";
 import Link from "next/link";
-import { Heart, MessageSquareMore, Send } from "lucide-react";
+import { Bookmark, Heart, MessageSquareMore, Send } from "lucide-react";
 import "./Post.css";
 
-export default function Post() {
+export default function Post({ saved }: { saved?: boolean }) {
   return (
     <div className="post Container outline outline-white hover:outline-gray-400">
       <div className="w-full flex items-center justify-between">
@@ -42,6 +42,11 @@ export default function Post() {
         <div className="max-w-12 min-w-12">
           <Button theme="normal" className="hover:bg-gray-200">
             <Heart className="text-red-500" fill="var(--color-red-500)" />
+          </Button>
+        </div>
+        <div className="max-w-12 min-w-12">
+          <Button theme="normal" className="hover:bg-gray-200">
+            <Bookmark fill={saved ? "var(--font-color)" : "none"} />
           </Button>
         </div>
         <div className="max-w-12 min-w-12">
