@@ -58,7 +58,10 @@ export default function MenuItems() {
         <User2 size={20} />
         پروفایل
       </Link>
-      <Link href="" className="w-full flex gap-2 items-center side_menu_item">
+      <Link
+        href="/settings"
+        className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/settings") && "active"}`}
+      >
         <Settings size={20} />
         تنظیمات
       </Link>
