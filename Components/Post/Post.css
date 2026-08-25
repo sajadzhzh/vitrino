@@ -5,3 +5,31 @@
   flex-direction: column;
   gap: calc(var(--spacing) * 2) ;
 }
+
+.showPost{
+  animation: showPost 0.25s;
+}
+.-showPost{
+  animation: -showPost 0.25s;
+}
+
+@keyframes showPost {
+  from{
+    display: none;
+    opacity: 0;
+  }
+  to{
+    display: flex;
+    opacity: 1;
+  }
+}
+@keyframes -showPost {
+  from{
+    display: flex;
+    opacity: 1;
+  }
+  to{
+    display: none;
+    opacity: 0;
+  }
+}
