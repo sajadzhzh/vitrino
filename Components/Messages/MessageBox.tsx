@@ -15,7 +15,7 @@ export default function MessageBox({
   onClose: () => void;
 }) {
   return (
-    <div className="w-full lg:w-3/4 h-full Container border border-gray-200 flex flex-col overflow-hidden">
+    <div className="w-full lg:w-3/4 h-[85svh] Container border border-gray-200 flex flex-col overflow-hidden">
       {data ? (
         <>
           <div className="w-full flex items-center shrink-0 bg-(--container-background) border-b border-gray-200 p-2">

@@ -107,7 +107,7 @@ export default function InputImage({
             </button>
 
             {index === 0 && (
-              <span className="absolute bottom-2 right-2 rounded-md bg-(--main-background) px-2 py-1 text-[10px] text-white backdrop-blur-sm">
+              <span className="absolute bottom-2 right-2 rounded-md bg-(--main-background) px-2 py-1 text-[10px] text-(--font-color) backdrop-blur-sm">
                 تصویر اصلی
               </span>
             )}

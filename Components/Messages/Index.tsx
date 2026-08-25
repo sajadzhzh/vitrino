@@ -29,7 +29,7 @@ export default function MessagePageModifier() {
   }, []);
 
   return (
-    <div className="w-full flex gap-2 h-[85svh] lg:h-116">
+    <div className="w-full flex gap-2 h-[85svh]">
       {(!isMobile || !data) && (
         <MessagePageMenu onClick={(userName) => setData({ userName })} />
       )}
