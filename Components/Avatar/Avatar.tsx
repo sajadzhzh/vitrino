@@ -5,6 +5,7 @@ import { BadgeCheck } from "lucide-react";
 
 export default function Avatar({
   userName,
+  className,
   href,
   online,
   hover,
@@ -12,6 +13,7 @@ export default function Avatar({
   onClick,
 }: {
   userName?: string;
+  className?: string;
   href?: string;
   online?: boolean;
   hover?: boolean;
@@ -31,13 +33,15 @@ export default function Avatar({
       <Image
         src={avatar}
         alt="avatar"
-        width={100}
-        height={100}
-        className="size-10 min-w-10 rounded-full"
+        width={500}
+        height={500}
+        className={className ? className : "size-10 min-w-10 rounded-full"}
       />
 
       {userName && (
-        <div className="text-[14px] group-hover:-translate-y-px">{userName}</div>
+        <div className="text-[14px] group-hover:-translate-y-px">
+          {userName}
+        </div>
       )}
 
       {veryfied && <BadgeCheck className="text-blue-500 min-w-5" />}

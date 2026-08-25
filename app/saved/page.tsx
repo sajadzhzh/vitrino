@@ -3,7 +3,7 @@ import { Bookmark } from "lucide-react";
 
 export default function SavedMessagePage() {
   return (
-    <div className="w-full h-[80svh] min-w-80 overflow-scroll scrollbar-none p-2 mt-20 lg:mt-0">
+    <div className="w-full h-[90svh] min-w-80 overflow-scroll scrollbar-none p-2 mt-20 lg:mt-0">
       <div className="">
         <div className="flex items-center gap-2 mb-4">
           <h1 className="flex items-center gap-1">

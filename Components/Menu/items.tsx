@@ -30,19 +30,31 @@ export default function MenuItems() {
         <Compass size={20} />
         کاوش
       </Link>
-      <Link href="/messages" className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/messages") && "active"}`}>
+      <Link
+        href="/messages"
+        className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/messages") && "active"}`}
+      >
         <MessageSquareMore size={20} />
         پیام‌ها
       </Link>
-      <Link href="/notification" className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/notification") && "active"}`}>
+      <Link
+        href="/notification"
+        className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/notification") && "active"}`}
+      >
         <Bell size={20} />
         اعلانات
       </Link>
-      <Link href="/saved" className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/saved") && "active"}`}>
+      <Link
+        href="/saved"
+        className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/saved") && "active"}`}
+      >
         <Bookmark size={20} />
         پست‌های ذخیره شده
       </Link>
-      <Link href="" className="w-full flex gap-2 items-center side_menu_item">
+      <Link
+        href="/profile"
+        className={`w-full flex gap-2 items-center side_menu_item ${path.includes("/profile") && "active"}`}
+      >
         <User2 size={20} />
         پروفایل
       </Link>

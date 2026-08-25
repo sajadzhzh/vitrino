@@ -8,7 +8,7 @@ export default function NotificationPage() {
         <Bell fill="yellow"/> اعلانات شما
       </h1>
 
-      <div className="w-full h-[80svh] overflow-scroll scrollbar-none p-2 flex flex-col gap-1">
+      <div className="w-full h-[90svh] overflow-scroll scrollbar-none p-2 flex flex-col gap-1">
         <NotificationItem user="sajadzhzh" type="follow"/>
         <NotificationItem user="Sina" type="like"/>
         <NotificationItem user="Sara" type="message"/>
